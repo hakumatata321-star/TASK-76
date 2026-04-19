@@ -1,6 +1,6 @@
 # FleetReserve Issue Fix Verification (Updated)
 
-Source reviewed: `.tmp/audit_report-1.md.md`
+Source reviewed: `.tmp/audit_report-1.md`
 Verification date: 2026-04-19
 Method: static re-audit after fixes + targeted test invocation attempt
 
