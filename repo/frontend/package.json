@@ -1,0 +1,10 @@
+{
+  "name": "fleetreserve-frontend-e2e",
+  "private": true,
+  "scripts": {
+    "test:e2e": "playwright test tests/e2e"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.54.2"
+  }
+}

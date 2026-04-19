@@ -1,0 +1,41 @@
+# Rust / Cargo
+**/target/
+target/
+
+# Trunk (Leptos) build output
+**/dist/
+dist/
+
+# JavaScript (Playwright in frontend/)
+**/node_modules/
+node_modules/
+
+# Playwright
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs / coverage
+*.log
+coverage/
+*.profraw
+*.profdata
+
+# Local databases / journals (dev)
+*.db-journal
+*.sqlite-shm
+*.sqlite-wal

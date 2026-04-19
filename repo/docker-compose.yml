@@ -1,0 +1,29 @@
+version: "3.8"
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    environment:
+      - DATABASE_URL=/data/fleetreserve.db
+      - ENCRYPTION_KEY=${ENCRYPTION_KEY}
+      - HMAC_SECRET=${HMAC_SECRET}
+      - UPLOAD_DIR=/data/uploads
+      - RUST_LOG=info
+    volumes:
+      - app-data:/data
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8080"
+    depends_on:
+      - backend
+
+volumes:
+  app-data:
